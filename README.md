@@ -1,8 +1,20 @@
-# React + Vite
+# Weather App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather app using the OpenWeather API with **autocomplete/typeahead** city search.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Typeahead suggestions while typing (e.g. `chen` → `Chennai`)
+- Keyboard navigation: ↑/↓ to move, Enter to select/search, Esc to close
+- Click a suggestion or press Enter to search
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Notes
+
+- The OpenWeather API key is currently hardcoded in `src/components/Weather.jsx`.
